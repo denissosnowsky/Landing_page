@@ -1,0 +1,80 @@
+.footer
+    width: 100%
+    background-color: #555
+    margin-top: 100px
+    box-shadow: 0px 0px 5px 20px #555
+    padding-bottom: 60px
+    &__wrapper
+        height: 350px
+        display: grid
+        grid-template-columns: 1fr 2fr
+        grid-column-gap: 50px
+    &__about
+    &__location
+        &-connection
+            width: 100%
+            height: 40%
+            display: grid
+            grid-template-columns: 1fr 1fr
+            &-adress
+                &-row
+                    display: block
+                    margin-bottom: 10px
+                    font-style: normal
+                    text-decoration: none
+                    color: #000
+            &-media
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                padding-top: 10px
+                &-all
+                    height: 50px
+                    width: 50px
+                    cursor: pointer
+                    transition: 0.5s all
+                    &:hover
+                        transform: scale(1.1)
+                    img
+                        object-fit: fill
+                        width: 100%
+                        height: 100%
+                &-instagram
+                    justify-self: end
+                &-facebook
+                    justify-self: center
+                &-youtube
+                    justify-self: start
+        &-map
+            box-shadow: 0px 0px 15px 1px #000
+            outline: none
+            width: 100%
+            height: 60%
+    &__connection
+    &__divs
+        display: grid
+        grid-template-rows: 1.5fr 6fr
+        height: 100%
+        width: 100%
+        position: relative
+        &-header
+            height: 100%
+            width: 100%
+            color: #fff
+            text-align: center
+            font-weight: 300
+            font-size: 20px
+            padding-top: 10px
+            z-index: 2
+            +circle_in_header
+            &::before
+                height: 30px
+                width: 30px
+                top: 20px
+                left: 39%
+            &-second
+                &::before
+                    left: 40%
+        &-main
+            height: 100%
+            width: 100%
+            font-size: 15px

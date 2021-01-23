@@ -1,0 +1,106 @@
+.discount
+    &__wrapper
+        display: grid
+        height: 600px
+        width: auto
+        grid-template-columns: 1fr 1fr
+        align-items: center
+    &__guitar
+        &-header
+            width: auto
+            font-size: 40px
+            font-weight: 300
+            margin-bottom: 50px
+        &-body
+            display: grid
+            height: 500px
+            grid-template-columns: 1.5fr 1fr
+            align-items: center
+            &-image
+                height: 500px
+                width: 100%
+                position: relative
+                &-img
+                    height: 80%
+                    width: 100%
+                    object-fit: contain
+                    display: block
+                    position: relative
+                    margin-top: 10px
+                &-precent
+                    position: absolute
+                    z-index: 2
+                    height: 35%
+                    width: 60%
+                    object-fit: fill
+                    display: block
+                    left: 95%
+                    top: -10px
+            &-desc
+                margin: 0 auto
+                text-align: center
+                right: 40px
+                position: relative
+                &-name
+                    padding-top: 100px
+                    margin-bottom: 30px
+                    font-size: 30px
+                &-priceNew
+                    margin-bottom: 5px
+                    font-size: 25px
+                    color: $main-color
+                &-priceOld
+                    font-size: 22px
+                    color: #444
+                    text-decoration: line-through
+                    margin-bottom: 20px
+                &-btn
+                    height: 40px
+                    width: 200px
+                    background-color: $main-color
+                    margin: 0 auto
+                    margin-top: 20px
+                    padding-top: 3px
+                    border-radius: 10px
+                    box-shadow: 0px 0px 20px 0px #555
+                    color: #fff
+                    transition: .5s all
+                    cursor: pointer
+                    outline: none
+                    border: 0px
+                    &:hover
+                        transform: scale(1.1)
+                &-disc
+                    margin-top: 15px
+                    color: $main-color
+                    font-size: 25px
+    &__timer
+        &-header
+            width: auto
+            text-align: center
+            font-size: 40px
+            font-weight: 300
+            margin-bottom: 50px
+            transform: translateY(-50px)
+        &-numbers
+            height: 50px
+            width: 100%
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            grid-template-rows: 5fr 1fr
+            grid-column-gap: 10px
+            transform: translateY(-50px)
+            grid-column-gap: 40px
+            &-indicator
+                height: 100px
+                text-align: center
+                font-size: 80px
+                font-weight: 300
+                padding-top: 10px
+                box-shadow: 0px 0px 15px 0px #000
+            &-text
+                text-align: center
+                font-weight: 300
+                padding-top: 10px
+                font-size: 25px
+                

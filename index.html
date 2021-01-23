@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Гитарный магазин - Mitchell</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap" rel="stylesheet">        
+        <script src="js/bundle.js"></script>
+    </head>
+    <body>
+        <header class='header' id="header">
+            <div class='header__logo'>
+                <img src='icons/head_logo.png' class="header__logo-img">
+            </div>
+            <nav class="header__nav">
+                <a class="header__nav-link" href="#catalog">Каталог</a>
+                <a class="header__nav-link" href="#tabs">Формы</a>
+                <a class="header__nav-link" href="#video">Звучание</a>
+                <a class="header__nav-link" href="#discount">Акция</a>
+            </nav>
+            <div class='header__btnWrapper'>
+                <button class="header__btnWrapper-btn">Связаться с нами</button>
+            </div>
+            <div class="header__spans">
+                <div class="header__spans-line header__spans-line-top"></div>
+                <div class="header__spans-line header__spans-line-center"></div>
+                <div class="header__spans-line header__spans-line-bottom"></div>
+            </div>
+        </header>
+        <main>
+            <section class="slide1">
+                <div class="slide1__wrapper">
+                    <div class="slide1__inner">
+                        <div class="slide1__slide">
+                            <img src="images/shot1.jpg">
+                        </div>
+                        <div class="slide1__slide">
+                            <img src="images/shot2.jpg">
+                        </div>
+                        <div class="slide1__slide">
+                            <img src="images/shot3.jpg">
+                        </div>
+                        <div class="slide1__slide">
+                            <img src="images/shot4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide1__filterBlock">                
+                </div>
+                <ol class="slide1__carousel">
+                </ol>
+                <div class="slide1__prev-btn-wrapper">
+                    <div class="slide1__prev-btn slide1__btn"></div>
+                </div>
+                <div class="slide1__next-btn-wrapper">
+                    <div class="slide1__next-btn slide1__btn"></div>            
+                </div>
+                <div class="slide1__heading">
+                    <div class="slide1__heading-h1">
+                        <h1>Гитарный магазин<br/><span class="slide1__heading-h1-name">Mitchell</span></h1>
+                    </div>
+                    <div class="slide1__heading-h2">
+                        <h2>лучшие фирмовые гитары Gibson</h2>
+                    </div>
+                </div>
+                <div class="slide1__hidden-div"></div>
+            </section>
+            <section class="benefits">
+                <div class="container">
+                    <div class="benefits__header">
+                        <h3>Наши преимущества</h3>
+                    </div>
+                    <div class="benefits__body">
+                        <div class="benefits__body-point">
+                            <div class="benefits__body-point-image">
+                                <img src="icons/delivery.png" alt="delivery">
+                            </div>
+                            <div class="benefits__body-point-text">Быстрая доставка по Украине</div>
+                        </div>
+                        <div class="benefits__body-point">
+                            <div class="benefits__body-point-image">
+                                <img src="icons/guarantee.png" alt="guarantee">
+                            </div>
+                            <div class="benefits__body-point-text">3 года гарантии на каждый товар</div>
+                        </div>
+                        <div class="benefits__body-point">
+                            <div class="benefits__body-point-image">
+                                <img src="icons/hours.png" alt="24hours">
+                            </div>
+                            <div class="benefits__body-point-text">Обслуживание круглосуточно</div>
+                        </div>
+                        <div class="benefits__body-point">
+                            <div class="benefits__body-point-image">
+                                <img src="icons/price.png" alt="price">
+                            </div>
+                            <div class="benefits__body-point-text">Низкие цены</div>
+                        </div>
+                        <div class="benefits__body-point">
+                            <div class="benefits__body-point-image">
+                                <img src="icons/quality.png" alt="quality">
+                            </div>
+                            <div class="benefits__body-point-text">Официальный поставщик</div>
+                        </div>
+                        <div class="benefits__body-point">
+                            <div class="benefits__body-point-image">
+                                <img src="icons/support.png" alt="support">
+                            </div>
+                            <div class="benefits__body-point-text">Индивидуальный подход</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs">
+                <div class="container">
+                    <div class="tabs__header">
+                        <h3 id="tabs">Формы гитар от Gibson</h3>
+                    </div>
+                    <div class="tabs__switcher">
+                        <div class="tabs__switcher-both tabs__switcher-active">Электро</div>
+                        <div class="tabs__switcher-both tabs__switcher-active-not">Акустика</div>
+                    </div>
+                    <div class="tabs__guitar-form fadeIn">
+                        <div class="tabs__guitar-form-content tabs__content-electro">
+                            <img src="images/electro1.png" class="tabs__guitar-form-content-img tabs__content-img-electro fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-electro fadeInDelay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Разработана в начале 1950-х годов. С тех пор гитара завоевала статус мирового символа Рок-музыки.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-electro">
+                            <img src="images/electro2.png" class="tabs__guitar-form-content-img tabs__content-img-electro fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-electro fadeInDelay">Дьявольские очертания, потрясающий звук хамбакера и быстрый гриф делают его одной из самых почитаемых моделей Gibson 1960-х.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-electro">
+                            <img src="images/electro3.png" class="tabs__guitar-form-content-img tabs__content-img-electro fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-electro fadeInDelay">С момента своего первого появления в 1958 году Gibson ES установил непревзойденный стандарт, став бесспорной классикой.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-electro">
+                            <img src="images/electro4.png" class="tabs__guitar-form-content-img tabs__content-img-electro fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-electro fadeInDelay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Используется артистами всех жанров, особенно Метала, что делает ее одной из настоящих классиков.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-electro">
+                            <img src="images/electro5.png" class="tabs__guitar-form-content-img tabs__content-img-electro fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-electro fadeInDelay">Выпущена только в ограниченных количествах, гитара летала на протяжении многих лет вместе с легионами последователей.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-menu">
+                            <h4>Выберите название формы:</h4>
+                            <div class="tabs__guitar-form-menu-list tabs__menu-list-electro">
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-electro tabs__guitar-form-menu-list-active">Les Paul</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-electro tabs__guitar-form-menu-list-active-not">SG</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-electro tabs__guitar-form-menu-list-active-not">ES-style</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-electro tabs__guitar-form-menu-list-active-not">Explorer</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-electro tabs__guitar-form-menu-list-active-not">Flying V</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__guitar-form fadeIn">
+                        <div class="tabs__guitar-form-content tabs__content-acoustic">
+                            <img src="images/acoustic1.png" class="tabs__guitar-form-content-img tabs__content-img-acoustic fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-acoustic fadeInDelay">Она представляет собой новую точку входа в акустику Gibson и новый прецедент в отношении звука и качества.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-acoustic">
+                            <img src="images/acoustic2.png" class="tabs__guitar-form-content-img tabs__content-img-acoustic fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-acoustic fadeInDelay">Меньшая глубина корпуса обеспечивает баланс низких, средних и высоких частот с одинаковым откликом на каждую ноту.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-acoustic">
+                            <img src="images/acoustic3.png" class="tabs__guitar-form-content-img tabs__content-img-acoustic fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-acoustic fadeInDelay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Выдает богатые, глубокие тона, хорошо играет аккорды в первой позиции, является лидером для ритм линии.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-acoustic">
+                            <img src="images/acoustic4.png" class="tabs__guitar-form-content-img tabs__content-img-acoustic fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-acoustic fadeInDelay">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Гитара создана прямиком из грецкого ореха, собранного ответственно, с заботой об окружающей среде.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-content tabs__content-acoustic">
+                            <img src="images/acoustic5.png" class="tabs__guitar-form-content-img tabs__content-img-acoustic fadeIn">
+                            <div class="tabs__guitar-form-content-spot">
+                                <img src="images/spot.png">
+                                <div class="tabs__guitar-form-content-spot-text tabs__spot-text-acoustic fadeInDelay">Гитара является самой известной акустической гитары в мире и, безусловно, одной из самых популярных.</div>
+                            </div>
+                        </div>
+                        <div class="tabs__guitar-form-menu">
+                            <h4>Выберите название формы:</h4>
+                            <div class="tabs__guitar-form-menu-list tabs__menu-list-acoustic">
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-acoustic tabs__guitar-form-menu-list-active">G-style</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-acoustic tabs__guitar-form-menu-list-active-not">J-style</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-acoustic tabs__guitar-form-menu-list-active-not">Hummingbird</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-acoustic tabs__guitar-form-menu-list-active-not">L-style</div>
+                                <div class="tabs__guitar-form-menu-list-btn tabs__list-btn-acoustic tabs__guitar-form-menu-list-active-not">SJ-style</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <div class="video__header">
+                        <h3 id="video">Сравните звучание гитар</h3>
+                    </div>
+                    <div class="video__wrapper">
+                        <div class="video__electro">
+                            <div class="video__electro-header video__wrapper-header">Электро</div>
+                            <div class="video__electro-inner video__wrapper-inner">
+                                <iframe class="youtube-video" width="450" height="315" src="https://www.youtube.com/embed/557mmTWO63A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="video__acoustic">
+                            <div class="video__acoustic-header video__wrapper-header">Акустика</div>
+                            <div class="video__acoustic-inner video__wrapper-inner">
+                                <iframe class="youtube-video" src="https://www.youtube-nocookie.com/embed/TXUc7_iNNOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="call">
+                <div class="container">
+                    <div class="call__header">
+                        <h3>Заказывай консультацию прямо сейчас!</h3>
+                    </div>
+                    <div class="call__wrapper">
+                        <form action="#" class="call__order-form" data-formConsult>
+                            <input required placeholder="Ваше имя" name="name" type="text" class="call__order-form-input">
+                            <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="call__order-form-input" maxlength="17" minlength="13">
+                            <img src="icons/right.png" alt="right" class="call__order-form-img">
+                            <button class="call__order-form-btn" data-formBtn>Перезвонить мне</button>
+                        </form>
+                    </div> 
+                </div>
+            </section>
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__header">
+                        <h3 id="catalog">Каталог гитар</h3>
+                    </div>
+                    <div class="catalog__switcher">
+                        <div class="catalog__switcher-both catalog__switcher-both-all catalog__switcher-active">Все</div>
+                        <div class="catalog__switcher-both catalog__switcher-both-allNot catalog__switcher-active-not">Электро</div>
+                        <div class="catalog__switcher-both catalog__switcher-both-allNot catalog__switcher-active-not">Акустика</div>
+                    </div>
+                    <div class="catalog__forms-switcher fadeIn"></div>
+                    <div class="catalog__forms-switcher fadeIn">
+                        <div>
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active">Все</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">Les Paul</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">SG</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">ES-style</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">Explorer</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">Flying V</div>
+                        </div>
+                    </div>
+                    <div class="catalog__forms-switcher fadeIn">
+                        <div>
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active">Все</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">G-style</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">J-style</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-btn-Hummingbird catalog__forms-switcher-active-not">Hummingbird</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">L-style</div>
+                        </div>
+                        <div class="catalog__forms-switcher-beforeLine">
+                            <div class="catalog__forms-switcher-btn catalog__forms-switcher-active-not">SJ-style</div>
+                        </div>
+                    </div>
+                    <div class="catalog__tabs">
+                    </div>
+                    <div class="catalog__help catalog__help-first">*Товар продается в гривнах по курсу НБУ</div>
+                    <div class="catalog__help catalog__help-second">*Отображается только тот товар, который есть в наличии</div>
+                </div>
+            </section>
+            <section class="convertor">
+                <div class="container">
+                    <div class="convertor__header">
+                        <h3>Конвертатор цены</h3>
+                    </div>
+                    <div class="convertor__wrapper">
+                        <div class="convertor__usd">
+                            <div class="convertor__usd-name convertor__currencyName">Введите доллари:</div>
+                            <input required placeholder="Цена в долларах" name="name" type="text" class="convertor__usd-input convertor__Curinput" pattern="\d*">
+                        </div>
+                        <div class="convertor__img">
+                            <img src="icons/wheels.png" alt="equals">
+                        </div>
+                        <div class="convertor__uah">
+                            <div class="convertor__uah-name convertor__currencyName">Гривны:</div>
+                            <input required placeholder="Цена в гривнах" name="name" type="text" class="convertor__uah-input convertor__uah-input convertor__Curinput" pattern="\d*">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="discount" id="discount">
+                <div class="container">
+                    <div class="discount__wrapper">
+                        <div class="discount__guitar">
+                            <div class="discount__guitar-header">АКЦИЯ - к Новому Году</div>
+                            <div class="discount__guitar-body">
+                                <div class="discount__guitar-body-image">
+                                    <img src="icons/crown.png" alt="discount-guitar" class="discount__guitar-body-image-precent">
+                                    <img src="images/acoustic5.png" alt="discount-guitar" class="discount__guitar-body-image-img">
+                                </div>
+                                <div class="discount__guitar-body-desc">
+                                    <div class="discount__guitar-body-desc-name">Gibson SJ-200 Original</div>
+                                    <div class="discount__guitar-body-desc-priceNew">$3,600.00</div>
+                                    <div class="discount__guitar-body-desc-priceOld">$4,499.00</div>
+                                    <div class="discount__guitar-body-desc-disc">Скидка 20%</div>
+                                    <button class="discount__guitar-body-desc-btn">Добавить в ящик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discount__timer">
+                            <div class="discount__timer-header">Осталось до конца акции:</div>
+                            <div class="discount__timer-numbers">
+                                <div class="discount__timer-numbers-indicator discount__timer-numbers-days"></div>
+                                <div class="discount__timer-numbers-indicator discount__timer-numbers-hours"></div>
+                                <div class="discount__timer-numbers-indicator discount__timer-numbers-minutes"></div>
+                                <div class="discount__timer-numbers-indicator discount__timer-numbers-seconds"></div>
+                                <div class="discount__timer-numbers-text">Дней</div>
+                                <div class="discount__timer-numbers-text">Часов</div>
+                                <div class="discount__timer-numbers-text">Минут</div>
+                                <div class="discount__timer-numbers-text">Секунд</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="modal">
+                <div class="modal__wrapper">
+                    <div class="modal__consultation modal__all">
+                        <div id="ass" class="modal__consultation-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__consultation-header modal__all-header">МЫ СВЯЖЕМСЯ С ВАМИ КАК МОЖНО БЫСТРЕЕ!</div>
+                        <form action="#" class="modal__consultation-form" data-formConsult>
+                            <input required placeholder="Ваше имя" name="name" type="text" class="modal__consultation-form-input">
+                            <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__consultation-form-input" maxlength="17" minlength="13">
+                            <button class="modal__consultation-form-btn" data-formBtn>Перезвонить мне</button>
+                        </form>
+                    </div>
+                    <div class="modal__basket modal__all">
+                        <div class="modal__basket-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__basket-header modal__all-header">Корзина</div>
+                        <div class="modal__basket-list">
+
+                            <!--<div class="modal__basket-list-sum">
+                                <div class="modal__basket-list-sum-name">Всего</div>
+                                <div class="modal__basket-list-sum-numbers">0</div>
+                            </div>-->
+                        </div>
+                        <form action="#" class="modal__basket-form" data-formBasket>
+                            <input required placeholder="Ваше имя" name="name" type="text" class="modal__basket-form-input">
+                            <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__basket-form-input" maxlength="17" minlength="13">
+                            <input required placeholder="Ваш e-mail" type="email" name="email" class="modal__basket-form-input">
+                            <input required placeholder="Город доставки" type="text" name="city" class="modal__basket-form-input">
+                            <select name="delivery" class="modal__basket-form-input">
+                                <option value="Not selected">Выберите способ доставки</option>
+                                <option value="Nova poshta">Новая почта</option>
+                                <option value="Ukrposhta">Укрпочта</option>
+                                <option value="Justin">Justin</option>
+                            </select>
+                            <input required placeholder="Номер отделения" type="number" name="department" class="modal__basket-form-input">
+                            <input type="text" name="product" class="modal__basket-form-input hidden-input" style="display: none;">
+                            <button class="modal__basket-form-btn" data-formBtn>Подтвердить заказ</button>
+                        </form>
+                    </div>
+                    <div class="modal__thanks modal__all">
+                        <div class="modal__thanks-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__thanks-header modal__all-header">Спасибо!</br>Скоро мы с вами свяжемся!</div>
+                    </div>
+                    <div class="modal__error modal__all">
+                        <div class="modal__error-close modal__all-close" data-close>&times;</div>
+                        <div class="modal__error-header modal__all-header">Упс!</br>Что-то пошло не так...</div>
+                    </div>
+                </div>
+            </section>
+            <section class="fixed">
+                <div class="fixed__basket" style="display: none;">
+                    <img src="icons/basket.png" alt="basket">
+                    <div class="fixed__basket-quantity">0</div>
+                </div>
+                <a class="fixed__arrow fadeIn" href="#header" style="display: none;">
+                    <img src="icons/arrow.png" alt="arrow">
+                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__about footer__divs">
+                        <div class="footer__divs-header">О нас</div>
+                        <div class="footer__divs-main">Mitchell - лучший дистрибьютор гитар от Gibson, магазины которого находятся в 28 городах Украины. Здесь Вы можете найти как классические образцы гитар по оригинальному дизайну, так и новый кастомные гитары современных дизайнеров.</br></br>Магазин работает круглосуточно, доставка по всей Украине через Укрпочту, Новую Почту и Justin. Товар можно поменять или отказаться от него в течении 14 дней после покупки.</br></br>Также у нас можно заказать дополнительные аксессуары к гитаре. Это сумка для гитары с защитой от дождя и температуры, медиаторы, кападастры, стойки и другое.</br></br>Авторские права © 2020</div>
+                    </div>
+                    <div class="footer__location footer__divs">
+                        <div class="footer__divs-header footer__divs-header-second">Связь с нами</div>
+                        <div class="footer__divs-main">
+                            <div class="footer__location-connection">
+                                <div class="footer__location-connection-adress">
+                                    <address class="footer__location-connection-adress-row">Адрес: Соф. Борщаговка, ул. Соборная, 126/2</address>
+                                    <a class="footer__location-connection-adress-row" href="tel:+380932209533">Номер: +38(093)22-095-33</a>
+                                    <div>Почта: mitchell@gmail.com</div>
+                                </div>
+                                <div class="footer__location-connection-media">
+                                    <a class="footer__location-connection-media-instagram footer__location-connection-media-all" href="https://www.instagram.com/den_sosnowsky" target="_blank">
+                                        <img src="icons/instagram.png" alt="instagram-logo">
+                                    </a>
+                                    <a class="footer__location-connection-media-facebook footer__location-connection-media-all" href="https://www.facebook.com/den.sosnowsky" target="_blank">
+                                        <img src="icons/facebook.png" alt="facebook-logo">
+                                    </a>
+                                    <a class="footer__location-connection-media-youtube footer__location-connection-media-all" href="https://www.youtube.com/channel/UClBfYnBe52JHV-hENeSK38w" target="_blank">
+                                        <img src="icons/youtube.png" alt="youtube-logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <iframe class="footer__location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271.5294163193735!2d30.331725600650056!3d50.40274115072698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb4648a870e3%3A0x764e424d029be34d!2z0KHQvtGE0LjQtdCy0YHQutCw0Y8g0KHRhNC10YDQsA!5e0!3m2!1sru!2sus!4v1609149971242!5m2!1sru!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

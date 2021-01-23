@@ -1,0 +1,82 @@
+.header
+    position: absolute
+    height: 120px
+    z-index: 5
+    top: 0
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &__logo
+        width: 220px
+        img
+            position: relative
+            top: 15%
+            left: 15%
+            object-fit: contain
+            width: 100%
+            height: 100%
+    &__btnWrapper
+        width: 300px
+        &-btn
+            position: relative
+            height: 50px
+            width: 200px
+            right: -10%
+            top: 35px
+            cursor: pointer
+            box-shadow: 0px 0px 30px 15px rgba(0,0,0,1)
+            background: linear-gradient(180deg, #ccc, #fff, #ccc)
+            border: 1px solid black
+            outline: none   
+            transition: .5s all
+            font-size: 18px
+            &:hover
+                transform: scale(1.05)
+    &__nav
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        width: 550px
+        justify-items: center
+        align-content: center
+        font-size: 25px
+        grid-column-gap: 50px
+        margin-left: 30px
+        font-weight: 300
+        &-active
+        &-link
+            width: fit-content
+            height: fit-content
+            text-decoration: none
+            color: rgba(256,256,256,.7)
+            transition: .5s all
+            &:hover
+                transform: scale(1.1)
+    &__spans
+        height: 70px
+        width: 80px
+        position: fixed
+        right: 0px
+        display: none
+        &-line
+            background-color: $main-color
+            width: 65px
+            height: 4px
+            margin: 0 auto
+            margin-top: 11px
+            margin-right: 15px
+            &-top
+                margin-top: 15px
+            &-active
+                &:first-child
+                    transform: rotate(45deg)
+                    position: relative
+                    top: 21%
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    transform: rotate(-45deg)
+
+
+
+
+    

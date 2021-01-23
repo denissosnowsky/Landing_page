@@ -1,0 +1,174 @@
+.modal
+    &__wrapper
+        display: none
+        position: fixed
+        top: 0%
+        left: 0%
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0, .7)
+        z-index: 11
+        overflow: auto
+    &__all
+        position: absolute
+        width: 500px
+        top: 15%
+        left: 50%
+        transform: translateX(-50%)
+        background-color: white
+        padding-bottom: 20px
+        &-close
+            position: absolute
+            top: 0%
+            right: 2%
+            font-size: 30px
+            transition: .5s all
+            cursor: pointer
+            &:hover
+                transform: scale(1.3)
+        &-header
+            text-align: center
+            margin-bottom: 30px
+            font-weight: 500
+            font-size: 25px
+    &__consultation
+        display: none
+        min-height: 340px
+        padding-top: 30px
+        &-form
+            &-input
+                position: relative
+                height: 50px
+                border: 0px 
+                bottom: 50%
+                width: 250px
+                text-align: center
+                margin-left: 40px
+                box-shadow: 0px 0px 20px 0px #555
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-bottom: 20px
+            &-btn
+                position: relative
+                height: 50px
+                border: 0px 
+                background-color: $main-color
+                bottom: 50%
+                width: 200px
+                cursor: pointer
+                transition: .5s all
+                box-shadow: 0px 0px 20px 0px #555
+                color: white
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-top: 20px
+                &:hover
+                    transform: scale(1.1)
+    &__basket
+        display: none
+        min-height: 340px
+        padding-top: 30px
+        &-header
+            margin-bottom: 50px
+            position: relative
+            +line_under_header
+            &::before
+                width: 70px
+                bottom: -5px
+                height: 3px
+        &-form
+            &-input
+                position: relative
+                height: 35px
+                border: 0px 
+                bottom: 50%
+                width: 250px
+                text-align: center
+                margin-left: 40px
+                box-shadow: 0px 0px 20px 0px #555
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-bottom: 15px
+            &-btn
+                position: relative
+                height: 50px
+                border: 0px 
+                background-color: $main-color
+                bottom: 50%
+                width: 200px
+                cursor: pointer
+                transition: .5s all
+                box-shadow: 0px 0px 20px 0px #555
+                color: white
+                outline: 0
+                display: block
+                margin: 0 auto
+                margin-top: 30px
+                &:hover
+                    transform: scale(1.1)
+        &-list
+            background-color: #eee
+            height: fit-content
+            width: 100%
+            padding: 15px
+            padding-top: 15px
+            margin-bottom: 40px
+            &-item
+                position: relative
+                height: fit-content
+                width: 100%
+                display: grid
+                grid-template-columns: 4fr 3fr 2fr 1fr
+                margin-bottom: 10px
+                &-name
+                    grid-column: 1/2
+                    width: 100%
+                    height: 100%
+                    font-size: 16px
+                    padding-top: 0px
+                &-numbers
+                    grid-column: 3/4
+                    width: 100%
+                    height: 100%
+                    &-price
+                        font-size: 18px
+                        color: $main-color
+                        font-weight: 500
+                    &-code
+                        font-size: 10px
+                        text-align: start
+                &-bin
+                    grid-column: 4/5
+                    height: 100%
+                    margin: 0 auto
+                    cursor: pointer
+                    transition: .5s all
+                    &:hover
+                        transform: scale(1.1)
+                    img
+                        object-fit: contain
+                        height: 25px
+                        width: 25px
+            &-sum
+                margin-top: 20px
+                display: grid
+                grid-template-columns: 2fr 1fr 1fr
+                &-name
+                    grid-column: 1/2
+                    font-size: 20px
+                    font-weight: 900
+                &-numbers
+                    grid-column: 3/4
+                    font-size: 20px
+                    font-weight: 900
+    &__thanks
+        display: none
+        height: 170px 
+        padding-top: 50px
+    &__error
+        display: none
+        height: 170px 
+        padding-top: 50px

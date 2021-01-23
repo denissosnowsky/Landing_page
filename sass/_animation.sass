@@ -1,0 +1,101 @@
+//fadeIn animation 2s
+.fadeIn
+    animation-name: fade-in
+    animation-iteration-count: 1
+    animation-duration: 2000ms
+@keyframes fade-in
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+//fadeIn animation 600ms
+.fadeIn-one
+    animation-name: fade-in-one
+    animation-iteration-count: 1
+    animation-duration: 600ms
+@keyframes fade-in-one
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+//fadeInDelay animation 2s
+.fadeInDelay
+    animation-name: fade-in-delay
+    animation-iteration-count: 1
+    animation-duration: 2000ms
+@keyframes fade-in-delay
+    0%
+        opacity: 0
+    10%
+        opacity: 0
+    100%
+        opacity: 1
+
+//fadeOut animation 600ms
+.fadeOut
+    animation-name: fade-out
+    animation-iteratiom-count: 1
+    animation-duration: 600ms
+@keyframes fade-out
+    from
+        opacity: 1
+    to
+        opacity: 0
+
+//fadeOut animation 600ms
+.fadeOut-one
+    animation-name: fade-out-one
+    animation-iteratiom-count: 1
+    animation-duration: 600ms
+@keyframes fade-out-one
+    from
+        opacity: 1
+    to
+        opacity: 0
+
+//fadeOutDelay animation
+.fadeOutDelay
+    animation-name: fade-out-delay
+    animation-iteratiom-count: 1
+    animation-duration: 600ms
+@keyframes fade-out-delay
+    0%
+        opacity: 1
+    20%
+        opacity: 1
+    100%
+        opacity: 0
+    
+//rotate3D-Out
+.rotate3D-out
+    animation: rotate3D-out
+    animation-iteration-count: 1
+    animation-duration: 600ms
+    animation-timing-function: ease-out
+@keyframes rotate3D-out
+    0%
+        transform: perspective(400px) rotate3d(0, 1, 0, 0deg)
+        opacity: 1
+    50%
+        opacity: 1
+    100%
+        transform: perspective(400px) rotate3d(0, 1, 0, -90deg)
+        opacity: 0.3
+
+//rotate3D-In
+.rotate3D-in
+    animation: rotate3D-in
+    animation-iteration-count: 1
+    animation-duration: 600ms
+    animation-timing-function: ease-out
+@keyframes rotate3D-in
+    0%
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg)
+        opacity: 0.3
+    50%
+        opacity: 1
+    100%
+        transform: perspective(400px) rotate3d(0, 1, 0, 0deg)
+        opacity: 1
